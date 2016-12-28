@@ -1,0 +1,22 @@
+body{
+    font-family: 'Arima Madurai', cursive;
+    color: mediumvioletred;
+    font-weight: 300;
+}
+
+.text-muted{
+    color: #5bc0de;
+}
+
+.text-thin{
+    font-weight: 100;
+}
+
+.title-super{
+    font-size: 68px;
+}
+
+.title-logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
