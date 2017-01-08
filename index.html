@@ -13,21 +13,36 @@
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-3">
             <img class="title-logo" src="images/MMT.png" alt="MMT logo">
         </div>
-        <div class="col-md-6 text-right text-uppercase">
+        <div class="col-md-9 text-right text-uppercase">
             <h1 class="title-super text-thin">Marina Toledo</h1>
-            <h3>Coding Ninja</h3>
+            <h3 class="subtitle">Coding Ninja</h3>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
+    <!-- menu hamburguer -->
+<!--     <a id="menu" class="header__menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </svg>
+    </a> -->
+
+<div class="row">
+    <div class="col-md-12">
+        <hr>
+        <div class="row" style="display: flex">
+        <a class="col-md-3" href="index.html">Home</a>
+        <a class="col-md-3" href="aboutMe.html">About me</a>
+        <a class="col-md-3" href="https://br.linkedin.com/in/marina-miyuki-toledo">Contact</a>
+        <a class="col-md-3" href="aboutThisSite.html">About this site</a>
+        </div>
         <hr>
     </div>
 </div>
@@ -46,33 +61,36 @@
 
 <div class="row text-center">
     <div class="col-md-4">
-        <img class="img-responsive" src="http://placekitten.com/g/555/300" alt="Pic2" data-toggle="modal" data-target="#project1">
-        <h3 class="text-uppercase">Project 1</h3>
-        <a href="https://github.com/marina-toledo">
-        <p>https://github.com/marina-toledo</p>
+        <img class="img-responsive" src="images/myResume.png" alt="Pic2" data-toggle="modal" data-target="#project1">
+        <h3 class="text-uppercase">Resume</h3>
+        <a href="https://github.com/marina-toledo/frontend-nanodegree-resume">
+        <p>Go to source code</p>
         </a>
     </div>
     <div class="col-md-4">
         <img class="img-responsive" src="http://placehold.it/555x300" alt="Pic3" data-toggle="modal" data-target="#project2">
-        <h3 class="text-uppercase">Project 2</h3>
-        <p>https://github.com/marina-toledo</p>
+        <h3 class="text-uppercase">Planner</h3>
+        <p>Go to source code</p>
     </div>
     <div class="col-md-4">
-        <img class="img-responsive" src="images/kyuubi.png" alt="Pic4">
-        <h3 class="text-uppercase">Project 3</h3>
-        <p>https://github.com/marina-toledo</p>
+        <img class="img-responsive" src="images/YourMovingCompanion.png" alt="Pic4" data-toggle="modal" data-target="#project3">
+        <h3 class="text-uppercase">Your moving companion</h3>
+        <p>Go to source code</p>
     </div>
 </div>
-<!-- Modal -->
+<!-- 1rst Modal -->
 <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                <h4 class="modal-title" id="myModalLabel">Resume project</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="images/happyPink.jpg" alt="happyPink">
-                This was my first project in this class (Udacity - Intro to HTML and CSS). I learned a lot about HTML and CSS.
+                This project was built in the Udacity's "Javascript Basics" course.<br>
+                It is an interactive curriculum built with Javascript. It gets the contents of your resume from a JSON file and dynamically displays the content within a provided template.<br>
+                Technologies used are HTML5, CSS, Javascript and Jquery framework.
+                <hr>
+                <img class="img-responsive" src="images/myResume.png" alt="resume">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -88,8 +106,6 @@
                 <h4 class="modal-title" id="myModalLabel">About this site</h4>
             </div>
             <div class="modal-body">
-                This site was built using HTML5, Javascript, CSS, Bootstrap framework, JQuery framework.
-                Perfomance was enhanced with Google's tool in https://developers.google.com/speed/pagespeed/insights/?hl=pt-BR
                 <img class="img-responsive" src="images/soon.png" alt="underConstruction">
                 <div class="text-uppercase">Future tasks:</div>
                 1) Make 2 versions of the website: English and Portuguese.
@@ -109,6 +125,26 @@
                 15) Google api ou outros apis
                 16) Inserir AJAX requests
                 17) Colocar campo de Search
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 3rd Modal -->
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Your moving companion</h4>
+            </div>
+            <div class="modal-body">
+                This project was built in the Udacity's "Intro to AJAX" course.<br>
+                It is a single-page application in which you can look up for places, giving the street and city address. And then the browser respond with a street view of the place, with New York Times articles and with Wikipedia's articles about that location.<br>
+                Technologies used are HTML, CSS, Javascript and Jquery framework.
+                <hr>
+                <img class="img-responsive" src="images/YourMovingCompanion.png" alt="resume">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -16,7 +16,41 @@ body{
     font-size: 68px;
 }
 
-.title-logo{
+.header{
     margin-top: 20px;
-    margin-left: 20px;
+}
+
+.modal-body{
+    font-size: 16px;
+}
+
+.modal-header, .modal-footer{
+    color: #5bc0de;
+}
+
+/* menu hamburguer */
+/*svg {
+  box-sizing: border-box;
+  width: 32px;
+  fill: #E0E0E0;
+  color: #424242;
+}*/
+
+@media screen and (max-width: 610px) {
+    .title-super{
+        font-size: 34px;
+    }
+    .modal-body{
+    font-size: 14px;
+    }
+    .title-logo{
+        max-width: 102px;
+        max-height: 102px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .text-muted{
+        font-size: 23px;
+    }
 }
