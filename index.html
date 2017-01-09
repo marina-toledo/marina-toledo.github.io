@@ -12,53 +12,51 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-theme.min.css"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <img class="title-logo" src="images/MMT.png" alt="MMT logo">
-        </div>
-        <div class="col-md-9 text-right text-uppercase">
-            <h1 class="title-super text-thin">Marina Toledo</h1>
-            <h3 class="subtitle">Coding Ninja</h3>
-        </div>
-    </div>
-
-    <!-- menu hamburguer -->
-<!--     <a id="menu" class="header__menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-      </svg>
-    </a> -->
-
+<!-- header -->
+<div class="container">
 <div class="row">
-    <div class="col-md-12">
-        <hr>
-        <div class="row" style="display: flex">
-        <a class="col-md-3" href="index.html">Home</a>
-        <a class="col-md-3" href="aboutMe.html">About me</a>
-        <a class="col-md-3" href="https://br.linkedin.com/in/marina-miyuki-toledo">Contact</a>
-        <a class="col-md-3" href="aboutThisSite.html">About this site</a>
-        </div>
-        <hr>
+    <div class="col-md-3">
+        <img class="title-logo" src="images/MMT.png" alt="MMT logo">
+    </div>
+    <div class="col-md-7 col-md-offset-2 text-right text-uppercase">
+        <h1 class="title-super text-thin">Marina Toledo</h1>
+        <h3 class="subtitle">Coding Ninja</h3>
     </div>
 </div>
+</div>
+<!-- menu -->
+<div class="row">
+    <hr>
+    <div class="row text-center">
+        <a class="col-md-3" href="index.html"><h3>Home</h3></a>
+        <a class="col-md-3" href="aboutMe.html"><h3>About me</h3></a>
+        <a class="col-md-3" href="https://br.linkedin.com/in/marina-miyuki-toledo"><h3>Contact</h3></a>
+        <a class="col-md-3" href="aboutThisSite.html"><h3>About this site</h3></a>
+    </div>
+    <hr>
+</div>
 
+<!-- main Home image -->
 <div class="row">
     <div class="col-md-12">
         <img class="img-responsive" src="http://placekitten.com/g/1140/350" alt="Pic1">
     </div>
 </div>
 
+<!-- header for projects -->
 <div class="row">
     <div class="col-md-12">
         <h2 class="text-muted">Featured Work</h2>
     </div>
 </div>
 
+<!-- projects -->
 <div class="row text-center">
     <div class="col-md-4">
         <img class="img-responsive" src="images/myResume.png" alt="Pic2" data-toggle="modal" data-target="#project1">
@@ -67,11 +65,11 @@
         <p>Go to source code</p>
         </a>
     </div>
-    <div class="col-md-4">
+<!--     <div class="col-md-4">
         <img class="img-responsive" src="http://placehold.it/555x300" alt="Pic3" data-toggle="modal" data-target="#project2">
         <h3 class="text-uppercase">Planner</h3>
         <p>Go to source code</p>
-    </div>
+    </div> -->
     <div class="col-md-4">
         <img class="img-responsive" src="images/YourMovingCompanion.png" alt="Pic4" data-toggle="modal" data-target="#project3">
         <h3 class="text-uppercase">Your moving companion</h3>
@@ -99,7 +97,7 @@
     </div>
 </div>
 <!-- 2nd Modal -->
-<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -125,13 +123,15 @@
                 15) Google api ou outros apis
                 16) Inserir AJAX requests
                 17) Colocar campo de Search
+                18) Mudar as urls
+                19) Separar Header e Footer em HTMLs diferentes e injeta-los
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- 3rd Modal -->
 <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -152,5 +152,14 @@
         </div>
     </div>
 </div>
+
+
+    <!-- footer -->
+    <h3 class="row"></h3>
+    <hr>
+    <h3 class="row"></h3>
+    </div>
+
+</div> <!-- close container -->
 </body>
 </html>
